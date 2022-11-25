@@ -6,7 +6,7 @@ const PostAuthor = ({ userId }) => {
   const users = useSelector(selectAllUsers);
 
   const author = users.find((user) => user.id === userId);
-  return <div>vy {author ? author.name : 'Unknown author'}</div>;
+  return <div>by {author ? author.name : 'Unknown author'}</div>;
 };
 
 export default PostAuthor;
